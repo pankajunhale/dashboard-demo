@@ -95,3 +95,46 @@ function mock_deleteFile(){
 
 }
 
+// more code refinement will come...
+
+function connect(isConnect:bool){
+    manageConnect(isConnect);
+}
+
+function manageConnect(isAbleToConnectWithYou:bool){
+    if(isAbleToConnectWithYou){
+        let allReasonList = findAllReasonToConnecct();
+        let reason = findTheSpecificReasonToConnect();
+        // if reason understatnd then next else...
+    }
+    else{
+        wantsToBeKeepConnected();
+    }
+}
+
+function wantsToBeKeepConnected(){
+    connect();
+}
+
+function findTheSpecificReasonListToConnect(list){
+    const result = list.filter((item)=>{
+        return (item.id != 0)
+    })
+}
+
+function findAllReasonToConnecct(){
+    return [
+        {name:'having peace of mind',id:1},
+        {name:'watned to spend quality time',id:2},
+        {name:'wanted to see and listen',id:3},
+        {name:'wont be able to restrict to myself, it become pattern',id:4},
+        {name:'other',id:5},
+        {name:'just coming for movie',id:6},
+        {name:'just coming and doing nothing no gain no loss no vision',id:7},
+        {name:'having strong internal feeling to meet',id:8},
+        {name:'just coming for TP',id:0}
+    ];    
+    /// more to be added...
+    // 10% funda...
+}
+

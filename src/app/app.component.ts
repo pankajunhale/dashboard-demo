@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiDemoService } from './services/api-demo.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-dashboard-app';
+
+  constructor(private service:ApiDemoService){
+    
+  }
 }
